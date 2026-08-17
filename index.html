@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olaoluwapo Success | Web Developer & Graphic Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">Olaoluwapo Success</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" onclick="toggleMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                Available for new projects
+            </div>
+            <h1>
+                Crafting Digital<br>
+                <span class="gradient-text">Experiences</span>
+            </h1>
+            <p class="hero-subtitle">
+                I design and build beautiful, functional websites and visual identities 
+                that help brands stand out and connect with their audience.
+            </p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn-primary">
+                    <i class="fas fa-eye"></i> View My Work
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">9+</div>
+                    <div class="stat-label">Projects Done</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Marquee -->
+    <div class="tech-marquee">
+        <div class="marquee-track">
+            <div class="marquee-item"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="marquee-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="marquee-item"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="marquee-item"><i class="fab fa-react"></i> React</div>
+            <div class="marquee-item"><i class="fab fa-node"></i> Node.js</div>
+            <div class="marquee-item"><i class="fab fa-figma"></i> Figma</div>
+            <div class="marquee-item"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="marquee-item"><i class="fas fa-palette"></i> UI/UX</div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-item"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="marquee-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="marquee-item"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="marquee-item"><i class="fab fa-react"></i> React</div>
+            <div class="marquee-item"><i class="fab fa-node"></i> Node.js</div>
+            <div class="marquee-item"><i class="fab fa-figma"></i> Figma</div>
+            <div class="marquee-item"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="marquee-item"><i class="fas fa-palette"></i> UI/UX</div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header reveal">
+            <span class="section-tag">About Me</span>
+            <h2 class="section-title">Bridging Code & Creativity</h2>
+            <p class="section-desc">Where technical precision meets artistic vision</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-visual reveal">
+                <div class="about-image">
+                    <i class="fas fa-user"><img src="surxyp.png" alt="Boy with phone" width="100%" height="auto"></i>
+                </div>
+                <div class="floating-card code">
+                    <i class="fas fa-code"></i>
+                    <span>Clean Code</span>
+                </div>
+                <div class="floating-card design">
+                    <i class="fas fa-pen-nib"></i>
+                    <span>Premium Design</span>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <h3>Hi, I'm Olaoluwapo Success</h3>
+                <p>
+                    I'm a multidisciplinary creative professional based in Nigeria, specializing in 
+                    web development and graphic design. With over 3 years of experience, I've helped 
+                    startups and established brands transform their digital presence.
+                </p>
+                <p>
+                    My approach combines clean, efficient code with thoughtful design. I believe great 
+                    digital experiences should be both beautiful and functional—every pixel purposeful, 
+                    every interaction intuitive.
+                </p>
+                <p>
+                    Whether you need a stunning website, a complete brand identity, or engaging visual 
+                    content, I bring the same level of dedication and attention to detail to every project.
+                </p>
+                <div class="skills-list">
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">Brand Identity</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Motion Graphics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header reveal">
+            <span class="section-tag">What I Do</span>
+            <h2 class="section-title">Services I Offer</h2>
+            <p class="section-desc">Comprehensive digital solutions tailored to your needs</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom websites built with modern technologies, optimized for performance, accessibility, and user experience.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Responsive Design</li>
+                    <li><i class="fas fa-check"></i> SEO Optimization</li>
+                    <li><i class="fas fa-check"></i> Graphic Design</li>
+                    <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+                </ul>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Visual storytelling that captures your brand's essence and communicates your message effectively.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Brand Identity</li>
+                    <li><i class="fas fa-check"></i> Logo Design</li>
+                    <li><i class="fas fa-check"></i> Marketing Materials</li>
+                    <li><i class="fas fa-check"></i> Social Media Graphics</li>
+                </ul>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>User-centered design that creates intuitive, engaging experiences across all devices and platforms.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> User Research</li>
+                    <li><i class="fas fa-check"></i> Wireframing</li>
+                    <li><i class="fas fa-check"></i> Prototyping</li>
+                    <li><i class="fas fa-check"></i> Usability Testing</li>
+                </ul>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Website Maintenance</h3>
+                <p>Ongoing support to keep your website secure, up-to-date, and performing at its best.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Security Updates</li>
+                    <li><i class="fas fa-check"></i> Content Updates</li>
+                    <li><i class="fas fa-check"></i> Performance Monitoring</li>
+                    <li><i class="fas fa-check"></i> Backup Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-header reveal">
+            <span class="section-tag">Portfolio</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-desc">A selection of my recent work across web development and design</p>
+        </div>
+        <div class="portfolio-filter reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="design">Graphic Design</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item reveal" data-category="web">
+                <img src="Screenshot_17-6-2026_115812_luminagrand.vercel.app.jpeg" alt="Hotel booking site">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-tag">Web Development</span>
+                    <h3>Hotel Booking Site</h3>
+                    <p>Modern shopping experience with seamless checkout</p>
+                </div>
+                <div class="portfolio-link">
+                    <a href="https://luminagrand.vercel.app"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-item reveal" data-category="web">
+                <img src="Screenshot_17-8-2026_174145_medicare-plus-orcin.vercel.app.jpeg" alt="Healthcare portal">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-tag">Web Development</span>
+                    <h3>Healthcare Portal</h3>
+                    <p>A comprehensive platform for managing patient records and appointments</p>
+                </div>
+                <div class="portfolio-link">
+                    <a href="https://medicare-plus-orcin.vercel.app/"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-item reveal" data-category="design">
+                <img src="890a1a487efba190057ef262be702fa4.jpg" alt="Graphic design project">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-tag">Graphic Design</span>
+                    <h3>Brand Identity</h3>
+                    <p>Complete visual identity for specialty roaster</p>
+                </div>
+                <div class="portfolio-link">
+                    <a href="890a1a487efba190057ef262be702fa4.jpg"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header reveal">
+            <span class="section-tag">Testimonials</span>
+            <h2 class="section-title">What Clients Say</h2>
+            <p class="section-desc">Real feedback from people I've worked with</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <p class="testimonial-text">
+                    Success transformed our outdated website into a modern, high-converting platform. 
+                    The attention to detail and creative problem-solving exceeded our expectations. 
+                    Our bounce rate dropped by 40% within the first month.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SJ</div>
+                    <div class="author-info">
+                        <h4>Sarah Johnson</h4>
+                        <span>CEO, Bloom Cosmetics</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <p class="testimonial-text">
+                    Working with Success on our brand identity was a game-changer. The logo, color palette, 
+                    and visual system perfectly captured our company's essence. Professional, responsive, 
+                    and incredibly talented.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MR</div>
+                    <div class="author-info">
+                        <h4>Michael Rodriguez</h4>
+                        <span>Founder, Nexus Tech</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <p class="testimonial-text">
+                    The e-commerce site Success built for us is beautiful and functional. Sales increased 
+                    by 65% after launch. The custom CMS makes managing products effortless. Highly 
+                    recommend for anyone serious about their online presence.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">EC</div>
+                    <div class="author-info">
+                        <h4>Emily Chen</h4>
+                        <span>Director, Artisan Home</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header reveal">
+            <span class="section-tag">Contact</span>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-desc">Have a project in mind? I'd love to hear about it.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <h3>Get In Touch</h3>
+                <p>Whether you have a clear vision or just a rough idea, I'm here to help bring it to life. Let's start a conversation.</p>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>successabayomi928@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+234 (802) 743 8945 </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Nigeria, Ogun State, Ado-odo-ota</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4>Availability</h4>
+                        <p>Mon - Fri, 9AM - 6PM </p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/successabayomi928-hash" target="_blank" rel="noopener noreferrer"><i class="fa-brands  fa-github"></i></a>
+                    <a href="https://wa.me/2348027438945" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/nifemifrontweb" target="_blank" rel="noopener noreferrer"> <i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form reveal">
+                <form id="contactForm" action="https://formspree.io/f/myklnawl" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Olaoluwapo Success" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="success@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="web">Web Development</option>
+                            <option value="design">Graphic Design</option>
+                            <option value="uiux">UI/UX Design</option>
+                            <option value="motion">Motion Graphics</option>
+                            <option value="branding">Branding</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="500-1k">$500 - $1,000</option>
+                            <option value="1k-3k">$1,000 - $3,000</option>
+                            <option value="3k-5k">$3,000 - $5,000</option>
+                            <option value="5k-10k">$5,000 - $10,000</option>
+                            <option value="10k+">$10,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project, goals, and timeline..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="logo">Olaoluwapo Success</div>
+        <p>Web Developer & Graphic Designer. Crafting digital experiences since 2022.</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">&copy; 2026 Olaoluwapo Success. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
