@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="22" fill="#0b0b10"></rect>
+  <path d="M38 25L18 50L38 75" fill="none" stroke="#7c5cff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M62 25L82 50L62 75" fill="none" stroke="#a78bfa" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+  <text x="50" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="white">S</text>
+</svg>
